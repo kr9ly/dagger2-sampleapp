@@ -21,12 +21,14 @@ public class SimpleIntentBuilder implements IntentBuilder {
         this.targetActivityClass = targetActivityClass;
     }
 
-    public void putExtra(String key, String value) {
+    public SimpleIntentBuilder putExtra(String key, String value) {
         extras.add(new StringExtraEntry(key, value));
+        return this;
     }
 
-    public void putExtra(String key, int value) {
+    public SimpleIntentBuilder putExtra(String key, int value) {
         extras.add(new IntegerExtraEntry(key, value));
+        return this;
     }
 
     @Override

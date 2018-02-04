@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="net.kr9ly.dagger2sampleapplication.view.ui.sample.list.SampleListViewModel" />
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="@string/app_name"
+                app:titleTextColor="#ffffff" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:adapter="@{viewModel.listAdapter}"
+            app:layoutManager="@{viewModel.listLayoutManager}"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:rows="@{viewModel.listRows}"
+            app:viewModelProviders="@{viewModel.viewModelProviders}" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>

@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Dagger2SampleApplication.iml" filepath="$PROJECT_DIR$/Dagger2SampleApplication.iml" />
+      <module fileurl="file://D:\Projects\dagger2-sampleapp\Dagger2SampleApplication.iml" filepath="D:\Projects\dagger2-sampleapp\Dagger2SampleApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\Projects\dagger2-sampleapp\app\app.iml" filepath="D:\Projects\dagger2-sampleapp\app\app.iml" />
+      <module fileurl="file://C:\Users\kr9ly\AndroidStudioProjects\Dagger2SampleApplication\dagger2-sampleapp.iml" filepath="C:\Users\kr9ly\AndroidStudioProjects\Dagger2SampleApplication\dagger2-sampleapp.iml" />
     </modules>
   </component>
 </project>

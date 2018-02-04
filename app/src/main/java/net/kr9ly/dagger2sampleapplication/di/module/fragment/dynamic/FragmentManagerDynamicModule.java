@@ -4,7 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 
-import net.kr9ly.dagger2sampleapplication.di.scope.Lifecycle;
+import net.kr9ly.dagger2sampleapplication.di.scope.ViewScope;
 
 import dagger.Module;
 import dagger.Provides;
@@ -18,7 +18,7 @@ public class FragmentManagerDynamicModule {
         this.scopeObject = scopeObject;
     }
 
-    @Lifecycle
+    @ViewScope
     @Provides
     FragmentManager provideFragmentManager() {
         if (scopeObject instanceof FragmentActivity) {

@@ -3,7 +3,7 @@ package net.kr9ly.dagger2sampleapplication.di.module.fragment.delegate;
 
 import android.support.v4.app.FragmentManager;
 
-import net.kr9ly.dagger2sampleapplication.di.scope.Lifecycle;
+import net.kr9ly.dagger2sampleapplication.di.scope.ViewScope;
 
 import dagger.Module;
 import dagger.Provides;
@@ -17,7 +17,7 @@ public class FragmentManagerDelegatedModule {
         this.delegate = delegate;
     }
 
-    @Lifecycle
+    @ViewScope
     @Provides
     FragmentManager provideFragmentManager() {
         return delegate.provide();

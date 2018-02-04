@@ -4,6 +4,7 @@ import android.content.Context;
 
 import net.kr9ly.dagger2sampleapplication.di.component.ApplicationComponent;
 import net.kr9ly.dagger2sampleapplication.di.component.DaggerApplicationComponent;
+import net.kr9ly.dagger2sampleapplication.di.module.recycler.LayoutManagerModule;
 import net.kr9ly.dagger2sampleapplication.di.module.resource.ResourceProviderModule;
 
 import java.util.WeakHashMap;
@@ -21,6 +22,7 @@ public class ApplicationComponentManager {
 
         component = DaggerApplicationComponent.builder()
                 .resourceProviderModule(new ResourceProviderModule(appContext))
+                .layoutManagerModule(new LayoutManagerModule(appContext))
                 .build();
 
         components.put(context, component);
